@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/crush/problem
+
 package week2;
 
 import java.io.BufferedWriter;

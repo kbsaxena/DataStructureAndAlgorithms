@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/array-left-rotation/problem
+
 package week2;
 import java.util.Arrays;
 import java.util.Scanner;

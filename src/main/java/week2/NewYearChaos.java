@@ -1,3 +1,5 @@
+https://www.hackerrank.com/challenges/new-year-chaos/problem
+
 package week2;
 
 import java.util.Scanner;
