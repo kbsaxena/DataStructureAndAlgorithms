@@ -1,4 +1,4 @@
-https://www.hackerrank.com/challenges/new-year-chaos/problem
+//https://www.hackerrank.com/challenges/new-year-chaos/problem
 
 package week2;
 
@@ -8,7 +8,7 @@ public class NewYearChaos {
 
     // Complete the minimumBribes function below.
     static void minimumBribes(int[] q) {
-        int temp = 0, count = 0, check =0;
+        int count = 0, check = 0;
         int[] bribe = new int[1000000];
         boolean isSorted = false;
 
@@ -16,9 +16,7 @@ public class NewYearChaos {
             isSorted = true;
             for(int i=q.length-1; i>0 ; --i){
                 if(q[i] < q[i-1]){
-                    temp = q[i-1];
-                    q[i-1] = q[i];
-                    q[i] = temp; 
+                    swap(q, i);
                     bribe[q[i]]++;
                     count++;
                     if(bribe[q[i]] > 2) {
@@ -33,6 +31,13 @@ public class NewYearChaos {
         if(check == 0)
             System.out.println(count);
               
+    }
+    
+    private static void swap(int[] q, int index) {
+        int temp = 0;
+        temp = q[index-1];
+        q[index-1] = q[index];
+        q[index] = temp; 
     }
 
     private static final Scanner scanner = new Scanner(System.in);
